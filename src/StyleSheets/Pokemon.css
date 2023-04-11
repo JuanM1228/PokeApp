@@ -1,0 +1,39 @@
+.pokemonItem {
+    align-items: center;
+    border: 1.8px solid white;
+    border-radius: 15px;
+    display: flex;
+    height: 100px;
+    justify-content: flex-start;
+    position: relative;
+    margin: 10px 10px;
+    width: 20rem;
+}
+
+.pokemonItem > p {
+    font-size: 1.8rem;
+}
+.pokeball{
+    margin: 0 1rem;
+}
+
+.pokemonItem > img {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    left: 70%;
+    z-index: 1;
+}
+
+.pokemonItem:hover{
+    border-color: var(--yellow-pokemon);
+}
+
+.pokemonItem:hover .pokeball{
+   color: rgb(223, 24, 24, 0.8);
+}
+
+.pokemonItem:hover img{
+    transform: scale(115%);
+    left: 70%;
+}

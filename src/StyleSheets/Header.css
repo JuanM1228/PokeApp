@@ -1,0 +1,17 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.username {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.username > p{
+  margin: 0 10px;
+  font-weight: bold;
+  font-size: 20px;
+}
