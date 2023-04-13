@@ -11,10 +11,18 @@ export const CardPokemonName = ({ name, url }) => {
   const navigate = useNavigate();
   const [Data, setData] = useState(null);
 
+  useEffect(() => {
+    fetch(url)
+      .then((response) => response.json())
+      .then((data) => {
+        const { id, name, stats, types, height, weight, sprites } = data;
+        setData({ id, name, stats, types, height, weight, sprites });
+      });
+  }, []);
+
   const handleOnClick = () => {
     dispatch(pokemonSelected(Data));
     localStorage.setItem("Data", JSON.stringify(Data));
-    console.log(localStorage.getItem("Data"));
     navigate(`/${name}/pokemonData`);
   };
 
@@ -29,15 +37,6 @@ export const CardPokemonName = ({ name, url }) => {
       <Loading />
     );
   };
-
-  useEffect(() => {
-    fetch(url)
-      .then((response) => response.json())
-      .then((data) => {
-        const { id, name, stats, types, height, weight, sprites } = data;
-        setData({ id, name, stats, types, height, weight, sprites });
-      });
-  }, []);
 
   return (
     <div className="pokemon-item" onClick={handleOnClick}>

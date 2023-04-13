@@ -17,6 +17,7 @@ export const Login = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     dispatch(changeUsername(username));
+    localStorage.setItem("username", username.toString());
     navigate("/pokemon");
   };
   return (
