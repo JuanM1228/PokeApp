@@ -11,11 +11,11 @@ import "../StyleSheets/PokemonData.css";
 
 export const PokemonData = () => {
   const pokemonData = useSelector((state) => state.pokemon);
-  const navigate = useNavigate()
+  const navigate = useNavigate();
 
-  const handleOnClickReturn = () =>{
-    navigate('/pokemon')
-  }
+  const handleOnClickReturn = () => {
+    navigate("/pokemon");
+  };
 
   const stats = () => {
     const iconsStats = [
@@ -32,7 +32,7 @@ export const PokemonData = () => {
         stat.stat.name !== "special-attack"
       ) {
         return (
-          <div key= {pokemonData.id} className="card-row">
+          <div key={pokemonData.id} className="card-row">
             <span className="card-row-name">
               {iconsStats[index]}
               <h4>{stat.stat.name}</h4>
@@ -47,14 +47,25 @@ export const PokemonData = () => {
   const types = () => {
     return (
       <div className="card-row-type">
-        {pokemonData.types.map(type => <h3 key= {pokemonData.id}style={{background: typeColors[type.type.name]}}>{type.type.name}</h3>)}
+        {pokemonData.types.map((type) => (
+          <h3
+            key={pokemonData.id}
+            style={{ background: typeColors[type.type.name] }}
+          >
+            {type.type.name}
+          </h3>
+        ))}
       </div>
-    )
+    );
   };
-  
+
   return (
     <div className="card-pokemon">
-      <HiArrowNarrowLeft  className= "button-return" size={40} onClick={handleOnClickReturn}/>
+      <HiArrowNarrowLeft
+        className="button-return"
+        size={40}
+        onClick={handleOnClickReturn}
+      />
       <img
         src={pokemonData.sprites.other.dream_world.front_default}
         width="200px"

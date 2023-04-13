@@ -1,32 +1,37 @@
 import React from "react";
-import { useSelector } from "react-redux";
 import logo from "../assets/pokemon-23.svg";
-import { TbPokeball } from "react-icons/tb";
+import { BiLogOut } from "react-icons/bi";
 import "../StyleSheets/Header.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
+import { useSelector, useDispatch } from "react-redux";
+import { changeUsername } from "../features/login/userSlice";
 
 export const Header = () => {
+  const navigate = useNavigate();
+  const location = useLocation();
   const username = useSelector((state) => state.user.username);
-  const navigate = useNavigate()
+  const dispatch = useDispatch();
 
-  const handleOnClick = () => {
-    navigate('/')
-  }
-  
-  if (username === "") {
-    return (
-      <div className="header">
-        <img src={logo} alt="" width="120px" />
-      </div>
-    );
-  }
+  const handleOnClickLogo = () => {
+    location.pathname != "/" ? navigate("/pokemon") : null;
+  };
+
+  const handleClickLogout = () => {
+    dispatch(changeUsername(""));
+    navigate("/");
+  };
+
   return (
     <div className="header">
-      <img src={logo} alt="" width="120px" onClick={handleOnClick} />
-      <span className="username">
-        <TbPokeball width="50px" />
-        <p>{username}</p>
-      </span>
+      <img src={logo} alt="" width="120px" onClick={handleOnClickLogo} />
+      {username !== "" ? (
+        <button className="logout-button" onClick={handleClickLogout}>
+          <BiLogOut className="logout-icon" size={"25px"} />
+          Logout
+        </button>
+      ) : (
+        ""
+      )}
     </div>
   );
 };
