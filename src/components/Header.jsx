@@ -24,7 +24,7 @@ export const Header = () => {
   return (
     <div className="header">
       <img src={logo} alt="" width="120px" onClick={handleOnClickLogo} />
-      {username !== "" ? (
+      {username !== "" && location.pathname !== "/" ? (
         <button className="logout-button" onClick={handleClickLogout}>
           <BiLogOut className="logout-icon" size={"25px"} />
           Logout
