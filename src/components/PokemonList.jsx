@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { CardPokemonName } from "./CardPokemonName";
+import { PokemonCardName } from "./PokemonCardName";
 import { useSelector } from "react-redux";
 import "../StyleSheets/PokemonList.css";
 
@@ -22,7 +22,7 @@ export const PokemonList = () => {
       <div className="pokemon-list">
         {pokemons.map((pokemon) => (
           <div key={pokemons.indexOf(pokemon)}>
-            <CardPokemonName {...pokemon} />
+            <PokemonCardName {...pokemon} />
           </div>
         ))}
       </div>

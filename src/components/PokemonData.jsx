@@ -44,7 +44,6 @@ export const PokemonData = () => {
     });
   };
 
-  
   const types = () => {
     return (
       <div className="card-row-type">
@@ -79,14 +78,14 @@ export const PokemonData = () => {
             <RxHeight />
             <h4>Height</h4>
           </span>
-          <p>{pokemonData.height} kg</p>
+          <p>{pokemonData.height / 10} m</p>
         </div>
         <div className="card-row">
           <span className="card-row-name">
             <TbWeight />
             <h4>Weight</h4>
           </span>
-          <p>{pokemonData.weight} ft</p>
+          <p>{pokemonData.weight / 10} kg</p>
         </div>
         {stats()}
       </div>

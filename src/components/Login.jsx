@@ -17,17 +17,15 @@ export const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const regex = /[^a-zA-Z0-9]/g;
-    const symbols = regex.test(username);
-    console.log(username)
-    console.log(symbols)
-    if (symbols) {
+    const regexCharacteres = /^[A-Za-z\s]{3,20}$/g;
+    const charactersOk = regexCharacteres.test(username);
+
+    if (charactersOk && username.trim().length !== 0) {
       dispatch(changeUsername(username));
       localStorage.setItem("username", username.toString());
       navigate("/pokemon");
-    }
-    else{
-      setValidation(false)
+    } else {
+      setValidation(false);
     }
   };
 
@@ -39,9 +37,16 @@ export const Login = () => {
         type="text"
         placeholder="Please enter your name"
         required
+        className={validation ? "valid-input" : "invalid-input"}
         onChange={handleChange}
       />
-      <p>{validation}</p>
+      {validation ? (
+        ""
+      ) : (
+        <p className="mensagge-error">
+          Only 3-20 alphabetic characters are allowed
+        </p>
+      )}
       <button>LOGIN</button>
     </form>
   );
