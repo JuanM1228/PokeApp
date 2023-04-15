@@ -32,7 +32,7 @@ export const PokemonData = () => {
         stat.stat.name !== "special-attack"
       ) {
         return (
-          <div key={pokemonData.id} className="card-row">
+          <div key={pokemonData.id + stat.stat.name} className="card-row">
             <span className="card-row-name">
               {iconsStats[index]}
               <h4>{stat.stat.name}</h4>
@@ -49,7 +49,7 @@ export const PokemonData = () => {
       <div className="card-row-type">
         {pokemonData.types.map((type) => (
           <h3
-            key={pokemonData.id}
+            key={pokemonData.id + type.type.name}
             style={{ background: typeColors[type.type.name] }}
           >
             {type.type.name}
