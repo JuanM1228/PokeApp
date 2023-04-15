@@ -17,9 +17,9 @@
 }
 
 .pokemon-card-row-type > h3{
-    border-radius: 5px;
+    border-radius: 15px;
     padding: .1rem .5rem;
-    margin: 10px;
+    margin: 0 0 0 7px;
     width: 3.2rem;
     text-align: center;
     font-size: 1rem;
@@ -48,15 +48,15 @@
     z-index: 1;
 }
 
-.pokemon-item:hover{
+:hover{
     border-color: var(--yellow-pokemon);
 }
 
-.pokemon-item:hover .pokeball{
+.pokemon-card:hover .pokeball{
    color: rgb(223, 24, 24, 0.8);
 }
 
-.pokemon-item:hover img{
-    transform: scale(115%);
+.pokemon-card:hover img{
+    transform: scale(118%);
     left: 70%;
 }
