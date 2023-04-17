@@ -21,6 +21,7 @@ export const Login = () => {
     const charactersOk = regexCharacteres.test(username);
 
     if (charactersOk && username.trim().length !== 0) {
+      console.log(username);
       dispatch(changeUsername(username));
       localStorage.setItem("username", username.toString());
       navigate("/pokemon");
