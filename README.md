@@ -1,17 +1,17 @@
 <p align="center" width="300">
    <img align="center" width="300" src="https://cdn.worldvectorlogo.com/logos/pokemon-23.svg" />
-   <h3 align="center">¡Que tal Heroes 👋! espero les agrade👨🏻‍💻</h3>
+   <h3 align="center">Hey Heroes 👋! hope you enjoy the project.👨🏻‍💻</h3>
 </p>
 
-Decidi realizar este proyecto con respecto a la api de pokemon ya que es uno de las series que mas me gustaban cuando era pequeño 👦 y que mas que realizar una prueba con algo que en verdad disfrutas 😍💪
+I decided to make this project about pokemon api because it is one of the series that I liked the most when I was a kid 👦 and what better than to make a test with something that you really enjoy 😍💪.
 
 # 🐥 Pokedex
 
-Proyecto para la visualización de catálogo de 100 pokemons con la posibilidad de mostrar información detallada de cada uno de ellos, con diseño basado en css puro y buena experiencia de usuario.
+Project for the visualization of a 100 pokemon catalog with the possibility to show detailed information of each one of them, with pure css based design and good UX.
 
 <br>
 
-# Tecnologias utilizadas
+# Tools
 
 <br>
 <br>
@@ -29,11 +29,11 @@ Proyecto para la visualización de catálogo de 100 pokemons con la posibilidad 
 <br>
 <br>
 
-# Librerias utilizadas
+# Libraries used
 
 ## react-router-dom:
 
-Para la navegación en el proyecto utilizando rutas fijas y dinámicas ya que es una de las librerías mas populares y tiene una gran comunidad de usuarios.
+For navigation in the project using fixed and dynamic routes as it is one of the most popular libraries and has a large community of users.
 
 <p align="center" width="300">
   <img align="center" width="120" src="https://reactrouter.com/_brand/react-router-color-inverted.svg"/>
@@ -41,7 +41,7 @@ Para la navegación en el proyecto utilizando rutas fijas y dinámicas ya que es
 
 ## react icons:
 
-Para el uso de algunos iconos en la aplicación ya que los iconos son facil de integrar y es compatible con todas las versiones de react.
+For the use of some icons in the application because the icons are easy to integrate and it is compatible with all versions of react.
 
 <p align="center" width="300">
   <img align="center" width="50" src="https://rawgit.com/gorangajic/react-icons/master/react-icons.svg"/>
@@ -49,9 +49,7 @@ Para el uso de algunos iconos en la aplicación ya que los iconos son facil de i
 
 ## redux-toolkit:
 
-Para la creación de store and reducers, esta librería es muy util para simplificar y optimizar el proceso de proyectos con redux.
-
--redux: para gestionar los estados en el proyecto, en mi caso los estados que utilice fueron el nombre de usuario y los datos del pokemon seleccionado
+For the creation of store and reducers, this library is very useful to simplify and optimize the process of projects with redux, to manage the states in the project, in my case the states that I used were the user name and the data of the selected pokemon.
 
 <p align="center" width="300">
    <img align="center" width="50" src="https://raw.githubusercontent.com/devicons/devicon/master/icons/redux/redux-original.svg" />
@@ -59,19 +57,19 @@ Para la creación de store and reducers, esta librería es muy util para simplif
 
 # Uso de SVG:
 
-utilice svg para el icono del proyecto, logo en header y cada una de las imagenes en cada tarjeta pokemon, ya que no existe perdida de calidad y de tamaño de archivo reducido, además pueden ser alterados por medio ded css como sucedio en las tarjetas que al hacer hover aumentan su tamaño.
+I used svg for the project icon, header logo and each of the images on each pokemon card, as there is no loss of quality and reduced file size, also they can be altered by css as it happened in the pokemon cards.
 
 # Diseño:
 
-- Decidí realizar el diseño con css puro ya que así no tengo limitada mi capacidad de personalización a diferencia del uso de bootstrap o tailwind que aunque ahorra tiempo sus diseños son muy básicos y pueden ser encontrados en muchas páginas web o aplicaciones.
-- Use en todo el proyecto flex para un diseño responsivo ya que me facilita la alineación de elementos y componentes y no vi necesario utilizar otra herramienta como grid ya que no contenía mi layout mucha complejidad
+- I decided to make the design with pure css because this way I am not limited in my ability to customize unlike the use of bootstrap or tailwind that although it saves time their designs are very basic and can be found in many web pages or applications.
+- I used flex throughout the project for a responsive design as it facilitates the alignment of elements and components and I did not see the need to use another tool such as grid as my layout did not contain much complexity.
 
 <p align="center" width="300">
  <img align="center" width="400" src="images\responsive.gif" />
 </p>
 
-- Tome como desición el uso de posiciones relativas y absolutas para la colocación de imagenes en tarjetas de pokemon para dar una mejor vista
-- Opte por realizar una pequeña cantidad de variables en cuestión de colores ya que esto facilita utilizarlos en el diseño y seguir una misma paleta de colores en el proyecto
+- I decided to use relative and absolute positions for the placement of images on pokemon cards to give a better view.
+- I choose to make a small amount of variables in terms of colors as this makes it easier to use them in the design and follow the same color palette in the project.
 
 <center>
 
@@ -83,23 +81,23 @@ utilice svg para el icono del proyecto, logo en header y cada una de las imagene
 
  </center>
 
-- opte por usar un cursor pointer para las tarjetas donde es posible realizar una interación con la aplicación mejorando la experencia de usuario
+- I chose to use a cursor pointer for the cards where it is possible to interact with the application to improve the user experience.
 
 # Restricciones en login:
 
-Utilice regex para restringir al usuario solo el uso de caracteres alfabeticos, de igual manera no pueden ingresar al proyecto si no ingresan un nombre de 3-20 caracteres, estas restricciones las propuse yo pero en un proyecto real dependerá de las especificaciones que se den entre front-end y back-end
+I used regex to restrict the user to use only alphabetic characters, also they can not enter the project if they do not enter a name of 3-20 characters, these restrictions were proposed by me but in a real project will depend on the specifications that are given between front-end and back-end, the use of regex is important because the queries are more efficient and faster.
 
 <br>
 
 # LocalStorage
 
-Decidi utilizar la herramienta de local storage ya que al refrescar el proyecto la información de pokemon seleccionado o usuario eran eliminadas, sin embargo al usar esta herramienta se mantendran en almacenamiento local y así mejorar la experiencia de usuario.
+I decided to use the local storage tool because when refreshing the project the selected pokemon or user information were deleted, however by using this tool they will be kept in local storage and thus improve the user experience.
 
 <br>
 
 # Componente Loading
 
-Ya que hice el requerimiento a la API de 100 pokemons y se consultan imagenes, coloqué un componente de carga para mejorar la experiencia de usuario y así este tenga en cuenta que la información esta siendo requerida.
+I placed a loading component to improve the user experience while the api returns the information to display, so the user is aware that the information is being requested.
 
 <br>
 
@@ -107,38 +105,41 @@ Ya que hice el requerimiento a la API de 100 pokemons y se consultan imagenes, c
 
 ## Header
 
-decidi agregar en el header el logo de pokemon en svg ademas de un botón de logout para poder salir de regreso a la pantalla de login simulando una mejor interfaz de usuario.
+I decided to add in the header the pokemon logo in svg and a logout button to be able to exit back to the login screen simulating a better user interface.
 
-## Primer pantalla Login
+## Login screen
 
  <img align= "right" width="400" src="images\app.gif" />
 
-En esta pantalla se puede observar un mensaje de bienvenida, un elemento input y un botón login, el elemento input tiene un atributo placeholder con la leyenda "please enter your name" para indicar al usuario que necesita ingresar, si el nombre del usuario ingresado contiene elementos numericos, simbolos o sólo espacios en blanco no será aceptado, si esto sucede se mostrará al usuario una leyenda con las caracteristicas de aceptación.
+In this screen you can see a welcome message, an input element and a login button, the input element has a placeholder attribute with the legend "please enter your name" to indicate to the users that they need to login, if the name of the user entered contains numerical elements, symbols or only blank spaces it will not be accepted, if this happens the user will be shown a legend with the acceptance characteristics.
 
-## Segunda pantalla cartas con todos los pokemon requeridos
+## Pokemon List screen
 
-como primer observación podemos darnos cuenta que al haber ingresado en el header se activo un botón de logout para así poder salir a login de nuevo, al inicio de la pantalla podemos observar el nombre del pokedex correspondiente al nombre de usuario ingresado, estilizado con un tipo de letra 8bit proveniente de google fonts
+As first observation we can realize that when we have entered in the header a logout button is shown to return to the login screen, at the beginning of the screen we can see the name of the pokedex corresponding to the user name entered, stylized with an 8 bit font from google fonts.
 
-posteriormente podremos observar las 100 tarjetas con cada uno de los pokemon con información de
-nombre, tipo de pokemon, peso e imagen, la cual al realizar un hover a la tarjeta crecerá un porcentaje dando una mejor experiencia de usuario el cual tendrá en cuenta que pokemon puede llegar a seleccionar.
-Esta pantalla esta estilizada en flexbox por lo que es responsiva.
+After that we will be able to observe the 100 cards with each one of the pokemon with information of name, type of pokemon, weight and image, which when hovering to the card will grow a percentage giving a better user experience which will take into account that pokemon can get to select.
+This screen is stylized in flexbox so it is responsive.
 
-## Tercer pantalla tarjeta de pokemon seleccionado
+## Pokemon information screen
 
-al seleccionar una tarjeta de pokemon nos mandará a otra pantalla donde se puede observar mayores caracteristicas del pokemon seleccionado como peso, altura, tipo de pokemon, puntos de vida, puntos de ataque, puntos de defensa y velocidad.
-si se desea regresar a la lista de pokemons existen dos formas de hacerlo:
--realizando click a logo pokemon ya que muchos usuarios estan acostumbrados a que al realizar click en los logos regresan a home
--realizando click a boton flecha colocado en la parte superior izquierda de la pantalla.
-cabe destacar que al realizar reload a la pagina esta no se verá afectada ya que la info esta almacenada en el local storage
+selecting a pokemon card will send us to another screen where we can see more characteristics of the selected pokemon such as weight, height, type of pokemon, life points, attack points, defense points and speed.
 
-# puntos de mejora:
+if you want to return to the pokemon list there are two ways to do it:
 
-- ingreso de mejores animaciones para la transición de paginas.
-- ingreso de mas información a tarjeta de pokemon seleccionado tal vez con algun componente tipo carrusel y gráficos para mejor visualización de información.
+- clicking on the pokemon logo, since many users are used to click on the logos to return to home.
+- clicking on the arrow button placed at the top left of the screen.
+  it should be noted that when reloading the page this will not be affected since the info is stored in the local storage.
+
+Another point to observe is that the url is dynamic with respect to the selected pokemon thanks to react router dom.
+
+# Improvement points:
+
+- better animations for page transitions.
+- more information in pokemon card selected maybe with some carousel component and graphics for better visualization of information.
 
 # Steps to run project
 
-Necesitas estas estas herramientas para comenzar:
+You need these tools to get started:
 
 - Node js
 - Git
@@ -147,16 +148,16 @@ You need to clone this repository https://github.com/JuanM1228/PokeApp.git in a 
 
 #### `git clone https://github.com/JuanM1228/PokeApp.git`
 
-despues de ello necesitas ingresar a la carpeta generada
+After that you need to enter the generated folder
 
 #### `cd PokeApp`
 
-Posteriormente deberás descargar las dependencias necesarias para el proyecto
+After that you need to download the necessary dependencies for the project
 
 #### `npm install`
 
-finally runs the app in the development mode.
+finally run the app in the development mode.
 
 #### `npm run dev -- --host`
 
-este comando es para correr el proyecto en modo desarrollo habilitando el puerto por default para que cualquier en red pueda observar el proyecto
+this command is to run the project in development mode enabling the default port so that any networked device can observe the page.
