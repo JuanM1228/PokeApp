@@ -159,4 +159,4 @@ finally runs the app in the development mode.
 
 #### `npm run dev -- --host`
 
-este comando es para activar
+este comando es para correr el proyecto en modo desarrollo habilitando el puerto por default para que cualquier en red pueda observar el proyecto
